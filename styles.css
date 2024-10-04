@@ -266,4 +266,38 @@ a {
 
 .content {
   grid-area: container;
+  overflow-x: hidden;
+}
+
+.chips-warpper {
+  max-width: calc(100vw -240px);
+  overflow-x: scroll;
+  display: flex;
+  background-color: #181818;
+  padding: 0px 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  overflow-x: scroll;
+}
+
+.chips {
+  margin: 6px 6px;
+  padding: 6px 12px;
+  background-color: #373737;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 16px;
+  white-space: nowrap;
+}
+
+.chips-warpper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.chips-warpper:hover::-webkit-scrollbar-thumb {
+  background-color: #71717171;
+}
+
+.chips:hover {
+  background-color: #d4d4d4;
+  transition: 0.5s;
 }
