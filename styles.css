@@ -48,6 +48,19 @@ a {
   font-size: 0.9rem;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #717171;
+}
+
 .header {
   grid-area: header;
   position: fixed;
@@ -55,7 +68,7 @@ a {
   left: 0;
   width: 100%;
   background-color: #202020;
-  height: 60px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -222,6 +235,7 @@ a {
   height: 100%;
   background-color: #121212;
   padding-top: 10px;
+  overflow-y: scroll;
 }
 
 .sidebar-items {
