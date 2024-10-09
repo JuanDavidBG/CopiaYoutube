@@ -7,9 +7,17 @@
   font-family: "Roboto", sans-serif;
 }
 
-/*
-layout
-*/
+:root{
+  --Blanco:#fff;
+  --Gris: #494949;
+  --Negro: #000000;
+  --Bordes: rgba(255, 255, 255, 0.1);
+  --TextoVideo: #aaa;
+  --Botones: #313131;
+}
+
+
+/*layout*/
 
 body {
   display: grid;
@@ -33,7 +41,7 @@ img {
 a {
   text-decoration: none;
   font-size: 0.9rem;
-  color: #fff;
+  color: var(--Blanco);
 }
 
 h1 {
@@ -41,7 +49,7 @@ h1 {
 }
 
 hr {
-  border: solid 1px rgba(255, 255, 255, 0.1);
+  border: solid 1px var(--Bordes);
   margin: 12px;
 }
 
@@ -55,7 +63,7 @@ hr {
 }
 
 .sidebar::-webkit-scrollbar-thumb {
-  background-color: #717171;
+  background-color: var(--Gris);
 }
 
 i {
@@ -65,7 +73,7 @@ i {
 h4 {
   font-size: 0.9rem;
   text-transform: uppercase;
-  color: #aaa;
+  color: var(--Gris);
   margin-left: 20px;
 }
 
@@ -75,7 +83,7 @@ h4 {
   top: 0;
   left: 0;
   gap: 6;
-  background-color: #202020;
+  background-color: var(--Negro);
   width: 100%;
   height: 56px;
   display: flex;
@@ -104,7 +112,7 @@ h4 {
 
 .logo h1 {
   letter-spacing: -1px;
-  color: #fff;
+  color: var(--Blanco);
 }
 
 .search-container {
@@ -123,11 +131,11 @@ h4 {
 .search-container input {
   width: 44px;
   width: 100%;
-  background-color: #121212;
-  color: #fff;
+  background-color: var(--Negro);
+  color: var(--Blanco);
   padding: 12px;
   outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--Gris);
   border-radius: 10px 0px 0px 10px;
 }
 
@@ -135,8 +143,8 @@ h4 {
   width: 40px;
   min-width: 40px;
   height: 40px;
-  background-color: #313131;
-  color: #fff;
+  background-color: var(--Botones);
+  color: var(--Blanco);
   border-radius: 0px 10px 10px 0px;
   outline: none;
   border: none;
@@ -145,7 +153,7 @@ h4 {
 }
 
 .search-container button:hover {
-  background-color: #494949;
+  background-color: var(--Gris);
 }
 
 .search-container form ~ button {
@@ -161,7 +169,7 @@ h4 {
 }
 
 .perfil-container a {
-  background-color: #313131;
+  background-color: var(--Gris);
   min-width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -172,7 +180,7 @@ h4 {
 }
 
 .perfil-container a:hover {
-  background-color: #494949;
+  background-color: var(--Botones);
 }
 
 .perfil-container img {
@@ -184,7 +192,7 @@ h4 {
 
 .sidebar {
   grid-area: sidebar;
-  background-color: #212121;
+  background-color: var(--Negro);
   padding-top: 10px;
   overflow-y: scroll;
 }
@@ -209,7 +217,7 @@ h4 {
 }
 
 .sidebar-item:hover {
-  background-color: #4c4c4c;
+  background-color: var(--Gris);
 }
 
 .content {
@@ -219,11 +227,11 @@ h4 {
 .chips-warpper {
   max-width: calc(100vw - 240px);
   overflow-x: scroll;
-  background-color: #181818;
+  background-color: var(--Negro);
   display: flex;
   padding-left: 14px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--Bordes);
+  border-bottom: 1px solid var(--Bordes);
 }
 
 .chips-warpper::-webkit-scrollbar {
@@ -231,14 +239,14 @@ h4 {
 }
 
 .chips-warpper::-webkit-scrollbar-thumb {
-  background-color: #717171;
+  background-color: var(--Gris);
 }
 
 .chips {
   margin: 12px 6px;
-  background-color: #373737;
+  background-color: var(--Gris);
   padding: 6px 12px;
-  color: #fff;
+  color: var(--Blanco);
   cursor: pointer;
   border-radius: 16px;
   white-space: nowrap;
@@ -246,16 +254,15 @@ h4 {
 }
 
 .chips:hover {
-  background-color: #373737;
+  background-color: var(--Negro);
 }
 
 .video-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-
   gap: 18px;
   padding: 20px;
-  background-color: #181818;
+  background-color: var(--Negro);
   overflow-y: scroll;
   height: calc(100vh - 119px);
 }
@@ -275,7 +282,7 @@ h4 {
 }
 
 .video-content:hover {
-  background-color: #373737;
+  background-color: var(--Gris);
 }
 
 .vide-box {
@@ -292,7 +299,7 @@ h4 {
 
 .video-detail {
   display: flex;
-  color: #fff;
+  color: var(--Blanco);
   padding-top: 12px;
 }
 
@@ -315,14 +322,14 @@ h4 {
 .chanel-name {
   font-size: 0.8rem;
   margin-top: 10px;
-  color: #aaa;
+  color: var(--TextoVideo);
 }
 
 .views-uploud {
   display: flex;
   font-size: 0.8rem;
   margin-top: 4px;
-  color: #aaa;
+  color: var(--TextoVideo);
 }
 
 .upload {
