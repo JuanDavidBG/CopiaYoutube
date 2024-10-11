@@ -16,7 +16,6 @@
   --Botones: #313131;
 }
 
-
 /*layout*/
 
 body {
@@ -36,6 +35,25 @@ img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.ri-menu-line {
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Negro);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.ri-menu-line:hover {
+  background-color: var(--Gris);
 }
 
 a {
@@ -95,6 +113,7 @@ h4 {
 .logo-container {
   display: flex;
   align-items: center;
+  gap: 6px;
 }
 
 .logo {
@@ -102,6 +121,7 @@ h4 {
   align-items: center;
   gap: 6px;
   position: relative;
+  cursor: pointer;
 }
 
 .logo-img {
@@ -115,10 +135,24 @@ h4 {
   color: var(--Blanco);
 }
 
+.Search {
+  min-width: 60px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  background-color: var(--Gris);
+  outline: none;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
 .search-container {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6;
   flex: 0 1 685px;
 }
 
@@ -129,21 +163,23 @@ h4 {
 }
 
 .search-container input {
-  width: 44px;
+  height: 40px;
+  display: flex;
+  align-items: center;
   width: 100%;
   background-color: var(--Negro);
+  border: 1px solid var(--Bordes);
   color: var(--Blanco);
   padding: 12px;
   outline: none;
-  border: 1px solid var(--Gris);
-  border-radius: 10px 0px 0px 10px;
+  font-size: 1rem;
+  border-radius: 10px 0 0 10px;
 }
 
 .search-container button {
   width: 40px;
   min-width: 40px;
   height: 40px;
-  background-color: var(--Botones);
   color: var(--Blanco);
   border-radius: 0px 10px 10px 0px;
   outline: none;
@@ -160,33 +196,66 @@ h4 {
   border-radius: 50%;
 }
 
-.perfil-container {
-  display: flex;
-  position: relative;
-  align-items: center;
-  gap: 6px;
-  margin-right: 10px;
-}
-
-.perfil-container a {
-  background-color: var(--Gris);
-  min-width: 40px;
+.mic {
   height: 40px;
+  min-width: 40px;
   border-radius: 50%;
+  outline: none;
+  border: none;
+  margin-left: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.8s;
+  background-color: var(--Negro);
+  cursor: pointer;
+  transition: 0.5s;
 }
 
-.perfil-container a:hover {
-  background-color: var(--Botones);
+.mic:hover {
+  background-color: var(--Gris);
 }
 
-.perfil-container img {
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: -1px;
+}
+
+.profile-box {
   position: relative;
   height: 40px;
   width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.profile-box img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cam,
+.noti {
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+  gap: -1;
+}
+
+.cam:hover,
+.noti:hover {
+  background-color: var(--Gris);
   border-radius: 50%;
 }
 
@@ -285,14 +354,14 @@ h4 {
   background-color: var(--Gris);
 }
 
-.vide-box {
+.video-box {
   position: relative;
   width: auto;
   height: 145px;
   display: block;
 }
 
-.vide-box img {
+.video-box img {
   object-fit: cover;
   border-radius: 12px;
 }
