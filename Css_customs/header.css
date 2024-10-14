@@ -79,7 +79,10 @@
   }
   .youtube__mic-button{
     border-radius: 50%;
+    
   }
+
+
   .youtube__profile-container{
     display: flex;
     align-items: center;
@@ -99,8 +102,8 @@
     cursor: pointer;
     transition: 0.8s;
   }
-  .youtube__profile-container_icons--fondo_gris_acero:hover{
-    background-color: var(--Gris);
+  .youtube__profile-container_icons:hover{
+    background-color: var(--Blanco);
   }
   
   .youtube__profile-box{
