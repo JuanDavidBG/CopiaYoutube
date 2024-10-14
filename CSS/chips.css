@@ -1,0 +1,33 @@
+.chips-warpper {
+    max-width: calc(100vw - 240px);
+    overflow-x: scroll;
+    background-color: var(--Negro);
+    display: flex;
+    padding-left: 14px;
+    border-top: 1px solid var(--Bordes);
+    border-bottom: 1px solid var(--Bordes);
+  }
+  
+  .chips-warpper::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  .chips-warpper::-webkit-scrollbar-thumb {
+    background-color: var(--Gris);
+  }
+  
+  .chips {
+    margin: 12px 6px;
+    background-color: var(--Gris);
+    padding: 6px 12px;
+    color: var(--Blanco);
+    cursor: pointer;
+    border-radius: 16px;
+    white-space: nowrap;
+    transition: 0.5s;
+  }
+  
+  .chips:hover {
+    background-color: var(--Negro);
+  }
+  
