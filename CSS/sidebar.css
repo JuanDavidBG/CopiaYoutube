@@ -1,54 +1,8 @@
-/* .sidebar {
+
+/* barra lateral de youtube */
+.youtube__sidebar{
     grid-area: sidebar;
     background-color: var(--Negro);
-    padding-top: 10px;
-    overflow-y: scroll;
-  }
-  
-  .sidebar-items {
-    display: flex;
-    flex-direction: column;
-    padding: 0 14px;
-  }
-  
-  .sidebar-item {
-    height: 40px;
-    display: flex;
-    align-items: center;
-    padding: 0 24px;
-    border-radius: 10px;
-    transition: 0, 5s;
-  }
-  
-  .sidebar-item i {
-    margin-right: 24px;
-  }
-  
-  .sidebar-item:hover {
-    background-color: var(--Gris);
-  }
-
-
-
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: transparent;
-    border-radius: 5px;
-  }
-  
-  .sidebar::-webkit-scrollbar-thumb {
-    background-color: var(--Gris);
-  }
-   */
-
-
-
-   .youtube__sidebar{
-    grid-area: sidebar;
-    background-color: var(--GRIS_SOMBRA);
     padding-top: 10px;
     overflow-y: scroll;
   }
@@ -65,23 +19,23 @@
     border-radius: 10px;
     transition: 0.5s;
     text-decoration: none;
-    color: var(--BLANCO_PURO);
+    color: var(--Blanco);
     font-size: 0.9rem;
   }
   .youtube__sidebar-title{
     font-size: 0.9rem;
     text-transform: uppercase;
-    color: var(--GRIS_CLARO);
+    color: var(--Blanco);
     margin-left: 10px;
   }
   .youtube__sidebar-icono{
     margin-right: 24px;
     font-size: 1.5rem;
   }
-  .youtube__sidebar-item:hover{
-    background-color: var(--GRIS_ACERO);
+  .youtube__sidebar-item--fondo_gris-acero:hover{
+    background-color: var(--Gris);
   }
   .youtube__sidebar-linea-separador{
     margin: 12px 0;
-    border: solid 1px var(--GRIS_SEMITRASPARENTE);
+    border: solid 1px var(--Gris);
   }

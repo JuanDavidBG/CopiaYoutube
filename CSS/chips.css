@@ -1,4 +1,7 @@
-/* .chips-warpper {
+.youtube__content{
+    grid-area: content;
+  }
+  .youtube__chips-wrapper{
     max-width: calc(100vw - 240px);
     overflow-x: scroll;
     background-color: var(--Negro);
@@ -7,49 +10,11 @@
     border-top: 1px solid var(--Bordes);
     border-bottom: 1px solid var(--Bordes);
   }
-  
-  .chips-warpper::-webkit-scrollbar {
-    height: 6px;
-  }
-  
-  .chips-warpper::-webkit-scrollbar-thumb {
-    background-color: var(--Gris);
-  }
-  
-  .chips {
+  .youtube__chips{
     margin: 12px 6px;
     background-color: var(--Gris);
     padding: 6px 12px;
     color: var(--Blanco);
-    cursor: pointer;
-    border-radius: 16px;
-    white-space: nowrap;
-    transition: 0.5s;
-  }
-  
-  .chips:hover {
-    background-color: var(--Negro);
-  }
-   */
-
-
-   .youtube__content{
-    grid-area: container;
-  }
-  .youtube__chips-wrapper{
-    max-width: calc(100vw - 240px);
-    overflow-x: scroll;
-    background-color: var(--NEGRO_SUPER_profundo);
-    display: flex;
-    padding-left: 14px;
-    border-top: 1px solid var(--GRIS_SEMITRASPARENTE);
-    border-bottom: 1px solid var(--GRIS_SEMITRASPARENTE);
-  }
-  .youtube__chips{
-    margin: 12px 6px;
-    background-color: var(--GRIS_SCARLA);
-    padding: 6px 12px;
-    color: var(--BLANCO_PURO);
     cursor: pointer;
     border-radius: 15px;
     white-space: nowrap;
@@ -58,13 +23,13 @@
   .youtube__chips-texto{
     font-size: 0.9rem;
   }
-  .youtube__chips:hover{
-    background-color: var(--GRIS_PERLA);
+  .youtube__chips--fondo_gris_perla:hover{
+    background-color: var(--Blanco);
   }
   .youtube__chips-wrapper::-webkit-scrollbar{
     height: 6px;
   }
   .youtube__chips-wrapper:hover::-webkit-scrollbar-thumb{
-    background-color: var(--GRIS_OSCURO_CLARO);
+    background-color: var(--Gris);
   }
   
