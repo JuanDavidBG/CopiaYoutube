@@ -35,26 +35,7 @@ img {
   object-fit: contain;
 }
 
-.ri-menu-line {
-  height: 40px;
-  min-width: 40px;
-  border-radius: 50%;
-  outline: none;
-  border: none;
-  margin-left: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--Negro);
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.ri-menu-line:hover {
-  background-color: var(--Gris);
-}
-
-a {
+/* a{
   text-decoration: none;
   font-size: 0.9rem;
   color: var(--Blanco);
@@ -80,7 +61,7 @@ h4 {
   color: var(--Gris);
   margin-left: 20px;
 }
-
+ */
 
 
 

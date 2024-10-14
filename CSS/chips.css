@@ -1,4 +1,4 @@
-.chips-warpper {
+/* .chips-warpper {
     max-width: calc(100vw - 240px);
     overflow-x: scroll;
     background-color: var(--Negro);
@@ -29,5 +29,42 @@
   
   .chips:hover {
     background-color: var(--Negro);
+  }
+   */
+
+
+   .youtube__content{
+    grid-area: container;
+  }
+  .youtube__chips-wrapper{
+    max-width: calc(100vw - 240px);
+    overflow-x: scroll;
+    background-color: var(--NEGRO_SUPER_profundo);
+    display: flex;
+    padding-left: 14px;
+    border-top: 1px solid var(--GRIS_SEMITRASPARENTE);
+    border-bottom: 1px solid var(--GRIS_SEMITRASPARENTE);
+  }
+  .youtube__chips{
+    margin: 12px 6px;
+    background-color: var(--GRIS_SCARLA);
+    padding: 6px 12px;
+    color: var(--BLANCO_PURO);
+    cursor: pointer;
+    border-radius: 15px;
+    white-space: nowrap;
+    transition: 0.5s;
+  }
+  .youtube__chips-texto{
+    font-size: 0.9rem;
+  }
+  .youtube__chips:hover{
+    background-color: var(--GRIS_PERLA);
+  }
+  .youtube__chips-wrapper::-webkit-scrollbar{
+    height: 6px;
+  }
+  .youtube__chips-wrapper:hover::-webkit-scrollbar-thumb{
+    background-color: var(--GRIS_OSCURO_CLARO);
   }
   
